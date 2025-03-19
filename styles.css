@@ -1,0 +1,535 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #B01117;
+    --background-color: #FFF7EE;
+    --secondary-color: #E1CEC3;
+    --accent-color: #B98C73;
+    --text-color: #333333;
+    --light-color: #FFFFFF;
+    --about-background-color: #e0cec2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* xenOnly Section */
+.xenOnly {
+    height: 100vh;
+    background-image: url('images/XenOnly.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.xenOnly-content {
+    position: relative;
+    z-index: 1;
+    color: var(--light-color);
+    margin-bottom: 100px;
+}
+
+.xenOnly h1 {
+    font-family: 'Forum', serif;
+    font-size: 10rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    word-break: break-word;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.xenOnly p {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 4px;
+}
+
+.xenOnly-buttons {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'Aileron', sans-serif;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+}
+
+.btn-signup {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* About Section */
+.about {
+    padding: 0;
+    position: relative;
+    height: 100vh;
+}
+
+.about-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.about-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('images/about.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+}
+
+.about-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 4rem;
+    color: var(--text-color);
+    background-color: var(--about-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about h2 {
+    color: #000000;
+    font-size: 5.5rem;
+    font-family: 'Aileron', sans-serif;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.about h3 {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    font-family: 'Aileron', sans-serif;
+}
+
+.about li {
+    color: #000000;
+    font-family: 'Aileron', sans-serif;
+    margin-bottom: 1rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.about li::before {
+    content: none;
+}
+
+/* Getting Started Section */
+.getting-started {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.getting-started h2 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 4rem;
+}
+
+.steps-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+}
+
+.step-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.signup-image {
+    background-image: url('images/1.jpg');
+}
+
+.connect-image {
+    background-image: url('images/2.jpg');
+}
+
+.grow-image {
+    background-image: url('images/3.jpg');
+}
+
+.step h3 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    align-self: flex-start;
+}
+
+.image-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+}
+
+
+.text-overlay h1 {
+    font-size: 8rem;
+    margin-top: 3vw;
+    max-width: 70%;
+    line-height: 1.2;
+    font-family: 'Aileron', sans-serif;
+    padding-left: 2vw;
+}
+
+.text-overlay p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding-left: 2.5vw;
+    font-family: 'Aileron', sans-serif;
+    letter-spacing: 4px;
+}
+
+.bottom-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: auto;
+}
+
+.bottom-elements button {
+    border-radius: 25px;
+    padding: 15px 55px;
+    font-size: 1.5rem;
+    font-family: 'Aileron', sans-serif;
+    font-weight: 600;
+    transform: translateY(-5vw);
+    margin-left: 2.5vw;
+}
+
+.btn-register {
+    background-color: #B01117;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.contact-text {
+    margin-bottom: 14vw;
+    font-family: 'Aileron', sans-serif;
+    align-self: flex-end;
+    max-width: 100%;
+    overflow: visible;
+    white-space: normal;
+    font-size: 1rem;
+}
+
+.copyright-text {
+    margin-bottom: 20px;
+    font-family: 'Aileron', sans-serif;
+    padding-left: 20px;
+    align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+    body, html, .xenOnly, .about, .getting-started, .image-section {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .xenOnly-content, .about-container, .steps-container, .image-container {
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .text-overlay {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .about-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .about-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        padding: 2rem;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-container {
+        height: 100vh;
+    }
+
+    .contact-text {
+        margin-bottom: 10vw;
+        margin-right: 0;
+        font-size: 0.9rem;
+        padding-right: 15px;
+    }
+    
+    .bottom-elements {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    
+    .bottom-elements > div {
+        width: 100%;
+    }
+
+    .xenOnly h1 {
+        font-size: 6rem;
+    }
+    
+    .xenOnly-content {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .xenOnly-buttons {
+        flex-direction: column;
+    }
+
+    .xenOnly h1 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        padding: 1.5rem;
+    }
+
+    .contact-text {
+        margin-bottom: 5vw;
+        font-size: 0.8rem;
+        width: 100%;
+        text-align: left;
+        padding-left: 2.5vw;
+        margin-right: 0;
+    }
+
+    .xenOnly p {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+    
+    .xenOnly-buttons {
+        gap: 1rem;
+    }
+    
+    .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .xenOnly-content {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .xenOnly h1 {
+        font-size: 3.5rem;
+    }
+    
+    .xenOnly-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+    .contact-text {
+        margin-right: 1vw;
+    }
+}
+
+.community-button {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.btn-community {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-family: 'Aileron', sans-serif;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    .community-button {
+        margin-top: 3rem;
+    }
+    .btn-community {
+        padding: 12px 40px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-overlay h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay h1 {
+        font-size: 3rem;
+    }
+}
+
