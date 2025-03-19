@@ -152,9 +152,23 @@ html {
     justify-content: center;
 }
 
+.about-logo {
+    position: absolute;
+    right: -25%;
+    top: 10%;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.about-logo img {
+    width: 60%;
+    height: auto;
+    opacity: 0.3;
+}
+
 .about h2 {
     color: #000000;
-    font-size: 5.5rem;
+    font-size: 8.5rem;
     font-family: 'Aileron', sans-serif;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -162,7 +176,7 @@ html {
 
 .about h3 {
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 4px;
     margin-bottom: 2rem;
@@ -174,7 +188,7 @@ html {
     font-family: 'Aileron', sans-serif;
     margin-bottom: 1rem;
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 /* ===== SECTION GETTING STARTED ===== */
@@ -337,6 +351,14 @@ html {
 }
 
 /* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 1024px) {
+    .about-logo {
+        right: -45%;
+        top: 10%;
+    }
+}
+
 @media (max-width: 768px) {
     /* Ajustements pour tablettes */
     .xenOnly h1 {
@@ -365,7 +387,7 @@ html {
     }
 
     .about h2 {
-        font-size: 2.5rem;
+        font-size: 5.5rem;
     }
     
     .text-overlay h1 {
@@ -386,6 +408,18 @@ html {
         margin-right: 0;
         font-size: 0.9rem;
         padding-right: 15px;
+    }
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-logo {
+        right: -45%;
+        top: 0%;
+    }
+
+    .about-logo img {
+        width: 65%;
     }
 }
 
@@ -453,6 +487,15 @@ html {
         padding-left: 2.5vw;
         margin-right: 0;
     }
+
+    .about-logo {
+        right: -15%;
+        top: 5%;
+    }
+
+    .about-logo img {
+        width: 80%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -464,6 +507,15 @@ html {
     .xenOnly-buttons {
         flex-direction: column;
         gap: 0.8rem;
+    }
+
+    .about-logo {
+        right: -10%;
+        top: 5%;
+    }
+
+    .about-logo img {
+        width: 90%;
     }
 }
 
