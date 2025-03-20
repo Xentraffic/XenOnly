@@ -72,7 +72,7 @@ html {
     height: 100vh;
     background-image: url('images/XenOnly.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -90,7 +90,7 @@ html {
 
 .xenOnly h1 {
     font-family: 'Forum', serif;
-    font-size: 10rem;
+    font-size: 11rem;
     margin-bottom: 2rem;
     font-weight: 400;
     word-break: break-word;
@@ -100,7 +100,7 @@ html {
 
 .xenOnly p {
     font-family: 'Aileron', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     letter-spacing: 4px;
 }
@@ -183,12 +183,27 @@ html {
     font-family: 'Aileron', sans-serif;
 }
 
+.about ul {
+    padding-left: 0;
+}
+
 .about li {
     color: #000000;
     font-family: 'Aileron', sans-serif;
     margin-bottom: 1rem;
     list-style: none;
     font-size: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.about li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 /* ===== SECTION GETTING STARTED ===== */
@@ -357,22 +372,36 @@ html {
         right: -45%;
         top: 10%;
     }
+    .bottom-elements {
+        margin-bottom: 10vw;
+    }
+    .text-overlay h1 {
+        font-size: 5rem;
+    }
+
+    .btn-register {
+        margin-bottom: 10vw;
+    }
 }
 
 @media (max-width: 768px) {
     /* Ajustements pour tablettes */
     .xenOnly h1 {
-        font-size: 6rem;
+        font-size: 8rem;
     }
-    
+
+    .xenOnly p {
+        font-size: 1rem;
+    }
+
     .xenOnly-content {
         margin-bottom: 70px;
     }
-    
+
     .logo img {
         width: 120px;
     }
-    
+
     .about-image {
         width: 100%;
         height: 50%;
@@ -389,20 +418,20 @@ html {
     .about h2 {
         font-size: 5.5rem;
     }
-    
+
     .text-overlay h1 {
         font-size: 5rem;
     }
-    
+
     .bottom-elements {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
-    
+
     .bottom-elements > div {
         width: 100%;
     }
-    
+
     .contact-text {
         margin-bottom: 10vw;
         margin-right: 0;
@@ -423,34 +452,38 @@ html {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     /* Ajustements pour smartphones */
     .xenOnly h1 {
-        font-size: 4rem;
+        font-size: 7rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .xenOnly p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         letter-spacing: 2px;
     }
-    
+
     .xenOnly-buttons {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .btn {
         padding: 12px 30px;
         font-size: 1rem;
     }
-    
+
     .xenOnly-content {
         margin-bottom: 50px;
     }
-    
+
     .about h2 {
-        font-size: 2rem;
+        font-size: 4rem;
+    }
+
+    .about h3 {
+        font-size: 1.5rem;
     }
 
     .about-content {
@@ -465,20 +498,20 @@ html {
     .logo img {
         width: 100px;
     }
-    
+
     .community-button {
         margin-top: 3rem;
     }
-    
+
     .btn-community {
         padding: 12px 40px;
         font-size: 1rem;
     }
-    
+
     .text-overlay h1 {
         font-size: 3rem;
     }
-    
+
     .contact-text {
         margin-bottom: 5vw;
         font-size: 0.8rem;
@@ -499,11 +532,10 @@ html {
 }
 
 @media (max-width: 320px) {
-    /* Ajustements pour petits smartphones */
     .xenOnly h1 {
         font-size: 3.5rem;
     }
-    
+
     .xenOnly-buttons {
         flex-direction: column;
         gap: 0.8rem;
@@ -516,6 +548,35 @@ html {
 
     .about-logo img {
         width: 90%;
+    }
+}
+
+@media (max-height: 800px) {
+    .btn-register {
+        padding: 12px 40px;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .xenOnly h1 {
+        font-size: 8rem;
+    }
+    .xenOnly p {
+        font-size: 0.8rem;
+    }
+    .about h2 {
+        font-size: 5rem;
+    }
+    .about h3 {
+        font-size: 1.5rem;
+    }
+    .about li {
+        font-size: 1rem;
+    }
+    .text-overlay h1 {
+        font-size: 3rem;
+    }
+    .text-overlay p {
+        font-size: 0.8rem;
     }
 }
 
