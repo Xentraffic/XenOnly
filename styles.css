@@ -541,6 +541,16 @@ html {
     }
 }
 
+@media (max-width: 335px) {
+    .xenOnly h1 {
+        font-size: 5rem;
+    }
+
+    .xenOnly p {
+        font-size: 0.7rem;
+    }
+}
+
 @media (max-width: 320px) {
     .xenOnly h1 {
         font-size: 3.5rem;
