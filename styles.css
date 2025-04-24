@@ -459,8 +459,7 @@ html {
     }
 
     .xenOnly h1 {
-        font-size: 7rem;
-        margin-bottom: 1.5rem;
+        font-size: 6rem;
     }
 
     .xenOnly p {
@@ -537,7 +536,7 @@ html {
 
 @media (max-width: 390px) {
     .xenOnly h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     .xenOnly p {
@@ -582,7 +581,7 @@ html {
         margin-top: 1rem;
     }
     .xenOnly h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .xenOnly p {
         font-size: 0.8rem;
