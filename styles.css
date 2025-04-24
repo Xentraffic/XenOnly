@@ -454,6 +454,10 @@ html {
 
 @media (max-width: 500px) {
     /* Ajustements pour smartphones */
+    .xenOnly {
+        background-image: url('images/XenOnlyPhone.jpg');
+    }
+
     .xenOnly h1 {
         font-size: 7rem;
         margin-bottom: 1.5rem;
