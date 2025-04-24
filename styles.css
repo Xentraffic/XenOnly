@@ -527,7 +527,17 @@ html {
     }
 
     .about-logo img {
-        width: 80%;
+        width: 35%;
+    }
+}
+
+@media (max-width: 390px) {
+    .xenOnly h1 {
+        font-size: 6rem;
+    }
+
+    .xenOnly p {
+        font-size: 0.8rem;
     }
 }
 
